@@ -1,0 +1,13 @@
+
+<script src="./js/script.js"></script>
+<p id="test1">Mon texte</p>
+
+<input type="button" name="button" value="click mot" onclick="afficheDom('test1');"/>
+
+<script>
+function afficheDom(idDom){
+    var monObj = document.getElementById(idDom);
+    alert(monObj.innerHTML);
+}
+</script>
+<!-- au click sur le bouton la fonction affiche une boite d'alerte contenant "Mon Texte" -->
